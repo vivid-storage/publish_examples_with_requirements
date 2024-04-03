@@ -8,33 +8,34 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       
       - name: deploy
         uses: rstudio/actions/connect-publish@main
         with:
-          url: https://${{ secrets.CONNECT_API_KEY }}@colorado.rstudio.com/rsc
+          url: https://${{ secrets.CONNECT_API_KEY }}@colorado.posit.co/rsc
           namespace: python-examples
           dir: |
             ./dash-app/
             ./dash-bikeshare/
+            ./dash-stock-pricing/
             ./fastapi-stock/
             ./flask-getting-started-rsc/
             ./flask-getting-started-sqlalchemy/
             ./flask-restx/
             ./flask-sentiment-analysis-api/
             ./flask-sentiment-analysis-app/
-            ./image-classifier/
             ./jupyter-interactive-visualization/
-            ./jupyter-static-visualization/
-            ./rmarkdown-notebook/
-            ./rmarkdown-static-visualization/
+            ./jupyter-voila/
+            ./quarto-lightbox/
+            ./reticulated-image-classifier/
+            ./reticulated-rmarkdown-notebook/
+            ./reticulated-sentiment-analysis-api/
+            ./reticulated-sentiment-analysis-app/
             ./shiny-income-share/
-            ./sentiment-analysis/
-            ./sentiment-analysis-app/
             ./streamlit-income-share/
           require-vanity-path: true
           access-type: all

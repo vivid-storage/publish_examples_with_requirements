@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "jupyter-voila",
+    "entrypoint": ""
+  },
+  "python": {
+    "version": "3.10.12",
+    "package_manager": {
+      "name": "pip",
+      "version": "23.3.1",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "44e80fabd94a432739599512034f4738"
+    },
+    ".internal.yml": {
+      "checksum": "e214c5fc2f19138e48b9579e3a731e00"
+    },
+    "README.md": {
+      "checksum": "b9980b76a9c5b600cd33ff3e70e007b6"
+    },
+    "bqplot.ipynb": {
+      "checksum": "9f283b29889500e6c78e83ad1257e03f"
+    },
+    "hash.ipynb": {
+      "checksum": "72f44e0fa678573992c7cf553ecb9a6f"
+    },
+    "ipyvolume.ipynb": {
+      "checksum": "f8df24eb0418afaa205b0cb1dbb49628"
+    },
+    "voila.png": {
+      "checksum": "7b1b11e04f0ded89a30adc69b86d1834"
+    }
+  }
+}
