@@ -45,10 +45,12 @@ jupyter_core==5.7.1
 jupyterlab-widgets==3.0.9
 kiwisolver==1.4.5
 linkify-it-py==2.0.2
-Markdown-it-py==3.0.0
+#Markdown-it-py==3.0.0
+Markdown-it-py
 matplotlib==3.8.2
 matplotlib-inline==0.1.6
-mdit-py-plugins==0.4.0
+#mdit-py-plugins==0.4.0
+mdit-py-plugins
 mdurl==0.1.2
 nbclient==0.9.0
 nbformat==5.9.2
