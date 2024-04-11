@@ -1,4 +1,5 @@
-altair==4.2.2
+--index-url https://p3m.dev/pypi/2023-12-05/simple
+altair
 anyio==4.2.0
 anywidget
 appdirs==1.4.4
@@ -87,9 +88,9 @@ requests==2.31.0
 rich==13.3.2
 rpds-py==0.13.2
 setuptools==69.0.3
-shiny==0.7.0
-shinywidgets==0.3.0
-six==1.16.0
+shiny
+shinywidgets
+six
 smmap==5.0.0
 stack-data==0.6.3
 starlette==0.34.0
