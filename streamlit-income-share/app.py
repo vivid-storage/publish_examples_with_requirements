@@ -6,14 +6,14 @@ import streamlit as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-st.title("Top 5%" " income share")
-st.markdown("Share of income received by the richest 5%" " of the population.")
+st.title("Top 5% income share")
+st.markdown("Share of income received by the richest 5% of the population.")
 DATA = os.path.join(HERE, "data.csv")
 
 
-@st.cache_data
+@st.cache
 def load_data(nrows):
-    return pd.read_csv("./data.csv", nrows=nrows)
+    return pd.read_csv(DATA, nrows=nrows)
 
 
 data_load_state = st.text("Loading data...")
