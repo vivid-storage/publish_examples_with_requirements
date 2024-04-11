@@ -1,9 +1,9 @@
+
 import altair as alt
 import pandas as pd
 from shinywidgets import output_widget, render_widget
 from shiny import App, reactive, ui
 
-# Load data
 income_shares = pd.read_csv("data.csv")
 countries = income_shares["Entity"].unique().tolist()
 
@@ -15,7 +15,6 @@ select_countries = {
     "na": ["United States", "Canada"],
 }
 
-# Define UI layout
 app_ui = ui.page_fluid(
     ui.panel_title("Top 5% Income Share"),
     ui.p("Share of income received by the richest 5% of the population"),
@@ -41,9 +40,9 @@ app_ui = ui.page_fluid(
             ui.input_slider(
                 "year_range",
                 "Year Range:",
-                min=income_shares["Year"].min(),
-                max=income_shares["Year"].max(),
-                value=(income_shares["Year"].min(), income_shares["Year"].max()),
+                min=1946,
+                max=2015,
+                value=(1946, 2015),
                 sep="",
             ),
         ),
@@ -53,7 +52,7 @@ app_ui = ui.page_fluid(
     ),
 )
 
-# Define server logic
+
 def server(input, output, session):
     @reactive.Calc
     def plot_data():
@@ -88,10 +87,7 @@ def server(input, output, session):
     for name in select_countries.keys():
         make_button_listener(name)
 
-# Create Shiny app
-app = App(app_ui, server)
 
-# Run the app
+app = App(app_ui, server)
 if __name__ == "__main__":
     app.run()
-    
