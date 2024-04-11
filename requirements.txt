@@ -57,7 +57,7 @@ nbclient==0.9.0
 nbformat==5.9.2
 nest-asyncio==1.5.8
 notebook
-numpy==1.26.3
+numpy
 packaging==23.2
 #pandas==2.2.0
 pandas
