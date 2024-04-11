@@ -1,6 +1,6 @@
 --index-url https://p3m.dev/pypi/2023-12-05/simple
 altair
-anyio==4.2.0
+anyio
 anywidget
 appdirs==1.4.4
 appnope==0.1.3
