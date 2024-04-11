@@ -58,7 +58,8 @@ nest-asyncio==1.5.8
 notebook
 numpy==1.26.3
 packaging==23.2
-pandas==2.2.0
+#pandas==2.2.0
+pandas
 palmerpenguins==0.1.4
 parso==0.8.3
 pexpect==4.9.0
