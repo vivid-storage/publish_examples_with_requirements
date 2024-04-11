@@ -59,12 +59,11 @@ nest-asyncio==1.5.8
 notebook
 numpy
 packaging==23.2
-#pandas==2.2.0
 pandas
 palmerpenguins==0.1.4
 parso==0.8.3
 pexpect==4.9.0
-pillow==10.2.0
+pillow
 platformdirs==4.1.0
 plotly
 prompt-toolkit
