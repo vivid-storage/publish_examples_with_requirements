@@ -86,7 +86,7 @@ referencing==0.31.1
 requests==2.31.0
 rich==13.3.2
 rpds-py==0.13.2
-setuptools==69.0.3
+setuptools
 shiny
 shinywidgets
 six
