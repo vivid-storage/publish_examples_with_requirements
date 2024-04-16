@@ -1,5 +1,5 @@
 --index-url https://p3m.dev/pypi/2023-12-05/simple
-altair
+altair<5
 anyio
 anywidget
 appdirs
