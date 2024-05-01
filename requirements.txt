@@ -38,6 +38,7 @@ ipython
 ipywidgets
 itsdangerous
 Jinja2
+jedi
 jsonschema
 jsonschema-specifications
 jupyter-client
@@ -86,6 +87,7 @@ setuptools
 shiny
 shinywidgets
 six
+sniffio
 smmap
 stack-data
 starlette
@@ -93,6 +95,8 @@ streamlit
 tenacity
 toolz
 tornado
+traitlets
+typing_extensions
 tzdata
 uc-micro-py
 urllib3
