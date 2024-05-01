@@ -46,7 +46,7 @@ jupyter_core
 jupyterlab-widgets
 kiwisolver
 linkify-it-py
-Markdown-it-py
+markdown-it-py
 matplotlib
 matplotlib-inline
 mdit-py-plugins
